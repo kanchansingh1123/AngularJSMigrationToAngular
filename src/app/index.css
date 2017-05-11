@@ -1,0 +1,43 @@
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #662d91;
+}
+
+h4, h5 {
+    font-weight: 300;
+}
+
+body div, body a {
+    transition: all 0.3s ease-out;
+}
+
+.main {
+	
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    height: 200px;
+    margin-left: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    margin-left: 20px; 
+}
+
+.content {
+	width: 100% !important;
+    margin-top: 50px;
+    position: fixed;
+    padding: 25px;
+}
+
+.gridtable {
+    width: 80%;
+}
