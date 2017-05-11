@@ -4,7 +4,7 @@
 			<h2>Employee</h2>
 			<form>
 				<div class="form-group">
-					<input class="form-control" type="text" placeholder="search by name" ng-model="search.Name">
+					<input class="form-control" type="text" placeholder="search by name" ng-model="search">
 				</div>
 			</form>
 			<table class="table table-striped">
@@ -19,7 +19,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="employee in employees | filter: search">
+					<tr ng-repeat="employee in employees | filter: {Name:search}">
 						<td>{{employee.Name | uppercase}}</td>
 						<td>{{employee.Age}}</td>
 					</tr>

@@ -6,7 +6,7 @@ angular.module('designer')
 .controller('ContentController', function ($scope, aiservice) {
 	var me = $scope;
 	me.employees = [];
-	me.search = {};
+	me.search = '';
 	
 	aiservice.getEmployeeList().then(function (response) {
         me.employees = response;
