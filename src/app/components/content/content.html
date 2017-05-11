@@ -1,17 +1,30 @@
 <div ng-controller="ContentController">
-    <div class="content">
-    	<div class="container">
-		  	<h2>Employee</h2>
-		  	<table class="gridtable">
-			  <tr>
-			    <th><h4>Name</h4></th>
-			    <th><h4>Age</h4></th>
-			  </tr>
-			  <tr>
-			    <td>Maria Anders</td>
-			    <td>25</td>
-			  </tr>  
+	<div class="content">
+		<div class="container">
+			<h2>Employee</h2>
+			<form>
+				<div class="form-group">
+					<input class="form-control" type="text" placeholder="search by name" ng-model="search.Name">
+				</div>
+			</form>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>
+							<h4>Name</h4>
+						</th>
+						<th>
+							<h4>Age</h4>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="employee in employees | filter: search">
+						<td>{{employee.Name | uppercase}}</td>
+						<td>{{employee.Age}}</td>
+					</tr>
+				</tbody>
 			</table>
 		</div>
-    </div>
+	</div>
 </div>

@@ -16,20 +16,28 @@ body div, body a {
 .main {
 	
 }
-
-.header {
-    position: absolute;
-    top: 0;
-    height: 200px;
-    margin-left: 20px;
+.primary{
+    background: #F16138;
+}
+    
+.navbar-headercls{
+    width: 100%;
+}
+.header-title{
+    margin-left: 12% !important;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    height: 100px;
-    margin-left: 20px; 
+.logo-imgcls{
+    width: 25%;
+    margin-top: 2%
 }
+
+.navbar-footercls{
+    width: 100%;
+    text-align: center;
+}
+
+
 
 .content {
 	width: 100% !important;
@@ -41,3 +49,4 @@ body div, body a {
 .gridtable {
     width: 80%;
 }
+

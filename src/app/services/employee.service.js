@@ -12,7 +12,7 @@ angular.module('designer')
 
             var request = $http({
                 method: "get",
-                url: './data/data.json'
+                url: 'app/services/data/data.json'
             });
 
             request.success(

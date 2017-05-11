@@ -4,5 +4,12 @@
 
 angular.module('designer')
 .controller('ContentController', function ($scope, aiservice) {
-	//console.log(aiservice);    
+	var me = $scope;
+	me.employees = [];
+	me.search = {};
+	
+	aiservice.getEmployeeList().then(function (response) {
+        me.employees = response;
+    });
+
 });
