@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('designer', ['ngRoute']);
+    .module('designer', ['ngRoute','pascalprecht.translate']);
 
 
 })();

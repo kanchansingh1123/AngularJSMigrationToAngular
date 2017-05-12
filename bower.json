@@ -17,8 +17,9 @@
     "jquery": "^2.2.3",
     "angular-utils-pagination": "latest",
     "angularjs-slider": "latest",
-	"chart.js":"latest"
-		  },
+    "chart.js": "latest",
+    "angular-translate": "^2.15.1"
+  },
   "devDependencies": {
     "angular-mocks": "~1.4.8"
   },
