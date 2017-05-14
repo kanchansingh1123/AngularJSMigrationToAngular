@@ -1,20 +1,26 @@
 <div ng-controller="ContentController">
 	<div class="content">
 		<div class="container">
-			<h2>Employee</h2>
+
+			<div style="text-align: center;">
+					<h2>{{ 'HEADLINE' | translate }}</h2>
+					<p>{{ 'INTRO_TEXT' | translate }}</p>				
+			</div>
+
+			<h2>{{'EMPLOYEE.TITLE' | translate}}</h2>
 			<form>
 				<div class="form-group">
-					<input class="form-control" type="text" placeholder="search by name" ng-model="search">
+					<input class="form-control" type="text" placeholder="{{ 'EMPLOYEE.SEARCH_PLACEHOLDER' | translate }}" ng-model="search">
 				</div>
 			</form>
 			<table class="table table-striped">
 				<thead>
 					<tr>
 						<th>
-							<h4>Name</h4>
+							<h4>{{'EMPLOYEE.NAME' | translate}}</h4>
 						</th>
 						<th>
-							<h4>Age</h4>
+							<h4>{{'EMPLOYEE.AGE' | translate}}</h4>
 						</th>
 					</tr>
 				</thead>
@@ -25,12 +31,6 @@
 					</tr>
 				</tbody>
 			</table>
-
-			<h2>{{ 'HEADLINE' | translate }}</h2>
-			<p>{{ 'INTRO_TEXT' | translate }}</p>
-
-			<button ng-click="changeLanguage('en')">english</button>
-			<button ng-click="changeLanguage('de')">german</button>
 		</div>
 	</div>
 </div>

@@ -18,15 +18,5 @@
       "id":3,
       "Name":"Jacob",
       "Age" : 30
-   },
-   {  
-      "id":4,
-      "Name":"Jayden",
-      "Age" : 26
-   },
-   {  
-      "id":5,
-      "Name":"Aaban",
-      "Age" : 27
    }
 ]

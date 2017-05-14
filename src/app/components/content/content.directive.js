@@ -1,9 +1,3 @@
-/*
-*This is directive for content area in designer which has information of template and controller
-*/
-
-
-
 (function () {
     'use strict';
 

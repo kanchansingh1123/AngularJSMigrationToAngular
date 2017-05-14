@@ -1,9 +1,7 @@
-﻿/* Content are controller for content area in Designer and it has one listener when user changed app menu */
-
-'use strict';
+﻿'use strict';
 
 angular.module('designer')
-	.controller('ContentController', function ($scope, aiservice,$translate) {
+	.controller('ContentController', function ($scope, aiservice) {
 		var me = $scope;
 		me.employees = [];
 		me.search = '';
@@ -11,7 +9,4 @@ angular.module('designer')
 		aiservice.getEmployeeList().then(function (response) {
 			me.employees = response;
 		});
-		$scope.changeLanguage = function (key) {
-			$translate.use(key);
-		};
 	});

@@ -1,7 +1,3 @@
-/*
-*This is directive for designer page which has information of template and controller
-*/
-
 (function () {
     'use strict';
 

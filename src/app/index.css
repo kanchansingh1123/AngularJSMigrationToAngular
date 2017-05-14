@@ -24,7 +24,8 @@ body div, body a {
     width: 100%;
 }
 .header-title{
-    margin-left: 12% !important;
+    position: absolute;
+    left: 45%;
 }
 
 .logo-imgcls{
@@ -48,5 +49,19 @@ body div, body a {
 
 .gridtable {
     width: 80%;
+}
+
+.language {
+    right: 2%;
+    position: absolute;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color: #000;
+}
+
+.language-text {
+    right: 10%;
+    position: absolute;
 }
 
