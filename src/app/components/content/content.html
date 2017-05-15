@@ -25,7 +25,11 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="employee in employees | filter: {Name:search}">
+					<!-- <tr ng-repeat="employee in employees | filter: {Name:search}">
+						<td>{{employee.Name | uppercase}}</td>
+						<td>{{employee.Age}}</td>
+					</tr> -->
+					<tr ng-repeat="employee in employees | Search:search">
 						<td>{{employee.Name | uppercase}}</td>
 						<td>{{employee.Age}}</td>
 					</tr>
